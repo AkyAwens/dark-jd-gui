@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE RSyntaxTheme SYSTEM "theme.dtd">
+
+<RSyntaxTheme version="1.0">
+
+   <!-- General editor colors. -->
+   <background color="1E1E1E"/>        <!-- Темно-серый фон -->
+   <caret color="FFFFFF"/>              <!-- Белый курсор -->
+   <selection bg="3A3D41" fg="FFFFFF"/> <!-- Темно-серый фон выделения с белым текстом -->
+   <currentLineHighlight color="2A2A2A" fade="false"/> <!-- Подсветка текущей строки чуть светлее фона -->
+   <marginLine fg="4E4E4E"/>            <!-- Линия маржи светло-серая -->
+   <markAllHighlight color="5E81AC"/>   <!-- Светло-синий для подсветки всех совпадений -->
+   <markOccurrencesHighlight color="BF616A" border="false"/> <!-- Красноватый цвет для выделения -->
+   <matchedBracket fg="A3BE8C" highlightBoth="false" animate="false"/> <!-- Зеленый цвет для соответствующих скобок -->
+   <hyperlinks fg="88C0D0"/>            <!-- Голубые гиперссылки -->
+   <secondaryLanguages>
+      <language index="1" bg="3B4252"/>  <!-- Темный фон для первого языка -->
+      <language index="2" bg="434C5E"/>  <!-- Еще темнее для второго -->
+      <language index="3" bg="4C566A"/>  <!-- И еще темнее для третьего -->
+   </secondaryLanguages>
+   
+   <!-- Gutter styling. -->
+   <gutterBorder color="4C566A"/>       <!-- Темно-серый бордюр -->
+   <lineNumbers fg="616E87"/>           <!-- Номера строк светло-серые -->
+   <foldIndicator fg="81A1C1" iconBg="1E1E1E"/> <!-- Иконки сворачивания кода светло-голубые -->
+   <iconRowHeader activeLineRange="5E81AC"/> <!-- Подсветка активной строки в голубом цвете -->
+   
+   <!-- Syntax tokens. -->
+   <tokenStyles>
+      <style token="IDENTIFIER" fg="ECEFF4"/> <!-- Ярко-белый для идентификаторов -->
+      <style token="RESERVED_WORD" fg="81A1C1" bold="true"/> <!-- Голубой для ключевых слов -->
+      <style token="RESERVED_WORD_2" fg="88C0D0" bold="true"/> <!-- Еще более яркий голубой для вторичных ключевых слов -->
+      <style token="ANNOTATION" fg="B48EAD"/> <!-- Фиолетовый для аннотаций -->
+      <style token="COMMENT_DOCUMENTATION" fg="4C566A"/> <!-- Темно-серый для документации -->
+      <style token="COMMENT_EOL" fg="4C566A"/> <!-- Темно-серый для однострочных комментариев -->
+      <style token="COMMENT_MULTILINE" fg="4C566A"/> <!-- Темно-серый для многострочных комментариев -->
+      <style token="COMMENT_KEYWORD" fg="5E81AC" bold="true"/> <!-- Синий для ключевых слов в комментариях -->
+      <style token="COMMENT_MARKUP" fg="5E81AC"/> <!-- Синий для разметки в комментариях -->
+      <style token="DATA_TYPE" fg="D08770" bold="true"/> <!-- Оранжевый для типов данных -->
+      <style token="FUNCTION" fg="A3BE8C"/> <!-- Зеленый для функций -->
+      <style token="LITERAL_BOOLEAN" fg="BF616A" bold="true"/> <!-- Красный для булевых литералов -->
+      <style token="LITERAL_NUMBER_DECIMAL_INT" fg="EBCB8B"/> <!-- Золотистый для целых чисел -->
+      <style token="LITERAL_NUMBER_FLOAT" fg="EBCB8B"/> <!-- Золотистый для чисел с плавающей точкой -->
+      <style token="LITERAL_NUMBER_HEXADECIMAL" fg="EBCB8B"/> <!-- Золотистый для шестнадцатеричных чисел -->
+      <style token="LITERAL_STRING_DOUBLE_QUOTE" fg="A3BE8C"/> <!-- Зеленый для строк -->
+      <style token="LITERAL_CHAR" fg="A3BE8C"/> <!-- Зеленый для символов -->
+      <style token="LITERAL_BACKQUOTE" fg="A3BE8C"/> <!-- Зеленый для обратных кавычек -->
+      <style token="MARKUP_TAG_DELIMITER" fg="81A1C1"/> <!-- Голубой для разделителей тегов -->
+      <style token="MARKUP_TAG_NAME" fg="88C0D0"/> <!-- Голубой для имен тегов -->
+      <style token="MARKUP_TAG_ATTRIBUTE" fg="D08770"/> <!-- Оранжевый для атрибутов тегов -->
+      <style token="MARKUP_TAG_ATTRIBUTE_VALUE" fg="A3BE8C" italic="true"/> <!-- Зеленый для значений атрибутов -->
+      <style token="MARKUP_COMMENT" fg="4C566A"/> <!-- Темно-серый для комментариев в разметке -->
+      <style token="MARKUP_DTD" fg="88C0D0"/> <!-- Голубой для DTD -->
+      <style token="MARKUP_PROCESSING_INSTRUCTION" fg="5E81AC"/> <!-- Синий для инструкций -->
+      <style token="MARKUP_CDATA" fg="ECEFF4"/> <!-- Белый для CDATA -->
+      <style token="MARKUP_CDATA_DELIMITER" fg="88C0D0"/> <!-- Голубой для разделителей CDATA -->
+      <style token="MARKUP_ENTITY_REFERENCE" fg="B48EAD"/> <!-- Фиолетовый для ссылок на сущности -->
+      <style token="OPERATOR" fg="81A1C1"/> <!-- Голубой для операторов -->
+      <style token="PREPROCESSOR" fg="5E81AC"/> <!-- Синий для препроцессоров -->
+      <style token="REGEX" fg="A3BE8C"/> <!-- Зеленый для регулярных выражений -->
+      <style token="SEPARATOR" fg="FFFFFF"/> <!-- Белый для разделителей -->
+      <style token="VARIABLE" fg="D08770" bold="true"/> <!-- Оранжевый для переменных -->
+      <style token="WHITESPACE" fg="4C566A"/> <!-- Темно-серый для пробелов -->
+      
+      <style token="ERROR_IDENTIFIER" fg="FFFFFF" bg="BF616A"/> <!-- Белый текст на красном фоне для ошибок -->
+      <style token="ERROR_NUMBER_FORMAT" fg="FFFFFF" bg="BF616A"/> <!-- Белый текст на красном фоне для ошибок числового формата -->
+      <style token="ERROR_STRING_DOUBLE" fg="FFFFFF" bg="BF616A"/> <!-- Белый текст на красном фоне для ошибок строк -->
+      <style token="ERROR_CHAR" fg="FFFFFF" bg="BF616A"/> <!-- Белый текст на красном фоне для ошибок символов -->
+   </tokenStyles>
+
+</RSyntaxTheme>
